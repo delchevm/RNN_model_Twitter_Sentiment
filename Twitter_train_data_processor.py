@@ -32,7 +32,6 @@ with open(open_file, 'r', encoding='utf8', errors='ignore') as file:
                     no_punct = no_punct + char
 
             g = open(write_folder + pos_neg + str(row_nub) + '.txt', 'w')
-            #print(no_punct.lower())
             g.write(no_punct.lower())
             row_nub = row_nub + 1
             g.close()
