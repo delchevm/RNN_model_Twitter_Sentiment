@@ -5,11 +5,10 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 import numpy as np
 import keras
-##import tensorflow_datasets as tfds
 import pickle
 from keras.preprocessing import sequence
 
-dataset_dir = "D:/Python/TestClassData_model"
+dataset_dir = "D:/Python/ClassData_model"
 train_dir = dataset_dir + '/train/'
 test_dir = dataset_dir + '/test/'
 
