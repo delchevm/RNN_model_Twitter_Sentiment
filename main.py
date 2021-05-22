@@ -65,33 +65,6 @@ vocab = new_v.get_vocabulary()
 
 #print(np.shape(raw_train_ds))
 """
-#############
-
-"""
-for example, label in raw_train_ds.take(1):
-    print('text: ', example.numpy())
-    print('label: ', label.numpy())
-
-encoded_example = int_vectorize_layer(example)[:1].numpy()
-print(encoded_example)
-
-vocabTest = np.array(int_vectorize_layer.get_vocabulary())
-
-for n in range(1):
-  print("Original: ", example[n].numpy())
-  print("Cleaned: ", " ".join(vocabTest[encoded_example[n]]))
-  print()
-  
-  
-  for example, label in raw_train_ds:
-    encoded_example = int_vectorize_layer(example)[:1].numpy()
-
-print(encoded_example)
-
-
-"""
-##########
-
 #### Model Start
 
 model = tf.keras.Sequential([
