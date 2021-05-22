@@ -10,14 +10,13 @@ import re
 
 model = keras.models.load_model("RNN_model.tf")
 
-path = 'D:/Python/'
 date_since = "2021-04-18"  #
 number_of_tweets = 20
 
-consumer_key= 'vdr6oIhUtacfwhz1LtYyical5'
-consumer_secret= '6jnevG4QdQOtiivWNhM4IqMbivCDFLXAJP9FZ1noOVlC27lsWY'
-access_token= '1386046020715487234-KP6iQ0xrU3izXEiS3CNeXIcjlMbJCm'
-access_token_secret= '8LuHEKIar1GxEYzgJWUMdl8BigyRJ2cDa1N6dsukiSGub'
+consumer_key= 'xxxxxxxxxx'
+consumer_secret= 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+access_token= 'xxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxx'
+access_token_secret= 'xxxxxxxxxxxxxxxxxxxxxxx'
 
 printable = set(string.printable)
 
