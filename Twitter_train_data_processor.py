@@ -13,7 +13,6 @@ with open(open_file, 'r', encoding='utf8', errors='ignore') as file:
     row_nub = 0
 
     for row in data:
-        #print(row[0] + " - " + str(row_nub))
         if int(row[0]) < 3:
             pos_neg = "neg/"
         elif int(row[0]) > 3:
