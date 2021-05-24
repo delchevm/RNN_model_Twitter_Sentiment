@@ -10,7 +10,7 @@ Tweets are filtered by a given phrase, start date and number of most recent twee
 Model outputs of 0.5 or above are considered to have a positive sentiment whereas outputs of below 0.5 are labelled as having a negative sentiment.
 
 # Model
-The model was trained on open source classified twitter data alongside with review data from Amazon. A total of 1,013,000 entries were used as inputs to train the model with an 80:20 train to validation split. 117,000 entries were used for testing.
+The model was trained on open source classified Twitter data alongside with Amazon review data. A total of 1,013,000 entries were used as inputs to train the model with an 80:20 train to validation split. 117,000 entries were used for testing.
 
 A vocabulary size of 100,000 words was used with the maximum input length truncated at 200 words.
 
