@@ -18,20 +18,20 @@ The inputs were pre-processed by remove punctuation, tokenised and vectorised wi
 
 The model uses a bidirectional RNN, increasing the performance as inputs are processed from start to end, but also backwards. The model structure is shown below:
 
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding (Embedding)        (None, 200, 64)           6400000   
+Layer (type)   -              Output Shape       -       Param #     
 _________________________________________________________________
-bidirectional (Bidirectional (None, 200, 128)          66048     
+embedding (Embedding)    -    (None, 200, 64)      -     6400000   
 _________________________________________________________________
-bidirectional_1 (Bidirection (None, 64)                41216     
+bidirectional - (Bidirectional (None, 200, 128)   -       66048     
 _________________________________________________________________
-dense (Dense)                (None, 64)                4160      
+bidirectional_1 - (Bidirection (None, 64)        -        41216     
 _________________________________________________________________
-dropout (Dropout)            (None, 64)                0         
+dense (Dense)          -      (None, 64)      -          4160      
 _________________________________________________________________
-dense_1 (Dense)              (None, 1)                 65        
-=================================================================
+dropout (Dropout)       -     (None, 64)        -        0         
+_________________________________________________________________
+dense_1 (Dense)        -      (None, 1)         -        65        
+
 Total params: 6,511,489
 Trainable params: 6,511,489
 Non-trainable params: 0
