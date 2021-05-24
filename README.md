@@ -3,7 +3,7 @@
 Multi-layer Long Short-Term Memory (LSTM) Recurrent Neural Networks (RNN) for text classification sentiment analysis in Python using TensorFlow.
 
 # Basic Usage
-Twitter.py loads the pre-trained model and classifies the sentiment of tweets filtered by given phrase using Titter API. 
+Twitter.py loads the pre-trained model and classifies the sentiment of tweets filtered by given phrase using Twitter API. 
 
 Tweets are filtered by a given phrase, start date and number of most recent tweets. The script removes @ mentions but retains the hashtags words when preparing the text for classification.
 
@@ -16,7 +16,7 @@ A vocabulary size of 100,000 words was used with the maximum input length trunca
 
 The inputs were pre-processed by remove punctuation, tokenised and vectorised with tf.keras.layers.experimental.preprocessing.TextVectorization.
 
-The model uses a bidirectional RNN, increasing the performance as inputs are processed from start to end, but also backwards. The model structure is shown below:
+The model uses a bidirectional RNN, increasing the performance as inputs are processed front to back and back to front. The model structure is shown below:
 
 Layer (type)   -              Output Shape       -       Param #     
 _________________________________________________________________
